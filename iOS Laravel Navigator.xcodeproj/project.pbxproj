@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5397DF91DBBDE5300FFDD62 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF11DBBDE5300FFDD62 /* APIResult.swift */; };
+		B5397DFA1DBBDE5300FFDD62 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF21DBBDE5300FFDD62 /* Coordinate.swift */; };
+		B5397DFB1DBBDE5300FFDD62 /* FoursquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF31DBBDE5300FFDD62 /* FoursquareClient.swift */; };
+		B5397DFC1DBBDE5300FFDD62 /* FoursquareEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF41DBBDE5300FFDD62 /* FoursquareEndpoint.swift */; };
+		B5397DFD1DBBDE5300FFDD62 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF51DBBDE5300FFDD62 /* Location.swift */; };
+		B5397DFE1DBBDE5300FFDD62 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF61DBBDE5300FFDD62 /* LocationManager.swift */; };
+		B5397DFF1DBBDE5300FFDD62 /* NetworkProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF71DBBDE5300FFDD62 /* NetworkProcessing.swift */; };
+		B5397E001DBBDE5300FFDD62 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397DF81DBBDE5300FFDD62 /* Venue.swift */; };
+		B5397E021DBBDFB700FFDD62 /* VersifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397E011DBBDFB700FFDD62 /* VersifyViewController.swift */; };
+		B5397E041DBBE35500FFDD62 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397E031DBBE35500FFDD62 /* LocalStore.swift */; };
+		B5397E061DBBE4E900FFDD62 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397E051DBBE4E900FFDD62 /* BooksTableViewController.swift */; };
+		B5397E081DBBE56100FFDD62 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397E071DBBE56100FFDD62 /* VenuesTableViewController.swift */; };
+		B5397E0A1DBBE69000FFDD62 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5397E091DBBE69000FFDD62 /* VenueTableViewCell.swift */; };
+		B5B156B51DA971E10032B1C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B156B41DA971E10032B1C4 /* AppDelegate.swift */; };
+		B5B156B71DA971E10032B1C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B156B61DA971E10032B1C4 /* ViewController.swift */; };
+		B5B156BA1DA971E10032B1C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B156B81DA971E10032B1C4 /* Main.storyboard */; };
+		B5B156BC1DA971E10032B1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B156BB1DA971E10032B1C4 /* Assets.xcassets */; };
+		B5B156BF1DA971E10032B1C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B156BD1DA971E10032B1C4 /* LaunchScreen.storyboard */; };
+		B5E88DF91DBBF165008BE0CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E88DF81DBBF165008BE0CA /* MapKit.framework */; };
+		B5F4FC131DBCAB1D00CCC564 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4FC121DBCAB1D00CCC564 /* Book.swift */; };
+		B5F4FC151DBCB62000CCC564 /* LaravelEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4FC141DBCB62000CCC564 /* LaravelEndpoint.swift */; };
+		B5F4FC171DBCC92A00CCC564 /* LaravelClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4FC161DBCC92A00CCC564 /* LaravelClient.swift */; };
+		B5F4FC191DBD3A3F00CCC564 /* LaravelVersifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4FC181DBD3A3F00CCC564 /* LaravelVersifyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5397DF11DBBDE5300FFDD62 /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIResult.swift; path = "iOS Laravel 2/Model/APIResult.swift"; sourceTree = "<group>"; };
+		B5397DF21DBBDE5300FFDD62 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Coordinate.swift; path = "iOS Laravel 2/Model/Coordinate.swift"; sourceTree = "<group>"; };
+		B5397DF31DBBDE5300FFDD62 /* FoursquareClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoursquareClient.swift; path = "iOS Laravel 2/Model/FoursquareClient.swift"; sourceTree = "<group>"; };
+		B5397DF41DBBDE5300FFDD62 /* FoursquareEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoursquareEndpoint.swift; path = "iOS Laravel 2/Model/FoursquareEndpoint.swift"; sourceTree = "<group>"; };
+		B5397DF51DBBDE5300FFDD62 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = "iOS Laravel 2/Model/Location.swift"; sourceTree = "<group>"; };
+		B5397DF61DBBDE5300FFDD62 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = "iOS Laravel 2/Model/LocationManager.swift"; sourceTree = "<group>"; };
+		B5397DF71DBBDE5300FFDD62 /* NetworkProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkProcessing.swift; path = "iOS Laravel 2/Model/NetworkProcessing.swift"; sourceTree = "<group>"; };
+		B5397DF81DBBDE5300FFDD62 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = "iOS Laravel 2/Model/Venue.swift"; sourceTree = "<group>"; };
+		B5397E011DBBDFB700FFDD62 /* VersifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersifyViewController.swift; sourceTree = "<group>"; };
+		B5397E031DBBE35500FFDD62 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		B5397E051DBBE4E900FFDD62 /* BooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
+		B5397E071DBBE56100FFDD62 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenuesTableViewController.swift; path = "iOS Laravel 2Tests/VenuesTableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		B5397E091DBBE69000FFDD62 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		B5B156B11DA971E10032B1C4 /* iOS Laravel Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Laravel Navigator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B156B41DA971E10032B1C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5B156B61DA971E10032B1C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5B156B91DA971E10032B1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5B156BB1DA971E10032B1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5B156BE1DA971E10032B1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5B156C01DA971E10032B1C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E88DF81DBBF165008BE0CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B5F4FC121DBCAB1D00CCC564 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Book.swift; path = "iOS Laravel 2/Model/Book.swift"; sourceTree = "<group>"; };
+		B5F4FC141DBCB62000CCC564 /* LaravelEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaravelEndpoint.swift; sourceTree = "<group>"; };
+		B5F4FC161DBCC92A00CCC564 /* LaravelClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaravelClient.swift; path = "iOS Laravel 2/Model/LaravelClient.swift"; sourceTree = "<group>"; };
+		B5F4FC181DBD3A3F00CCC564 /* LaravelVersifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaravelVersifyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5B156AE1DA971E10032B1C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5E88DF91DBBF165008BE0CA /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5397DEE1DBBDC8700FFDD62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5397DF11DBBDE5300FFDD62 /* APIResult.swift */,
+				B5397DF21DBBDE5300FFDD62 /* Coordinate.swift */,
+				B5397DF31DBBDE5300FFDD62 /* FoursquareClient.swift */,
+				B5F4FC161DBCC92A00CCC564 /* LaravelClient.swift */,
+				B5397DF41DBBDE5300FFDD62 /* FoursquareEndpoint.swift */,
+				B5F4FC141DBCB62000CCC564 /* LaravelEndpoint.swift */,
+				B5397E031DBBE35500FFDD62 /* LocalStore.swift */,
+				B5397DF51DBBDE5300FFDD62 /* Location.swift */,
+				B5397DF61DBBDE5300FFDD62 /* LocationManager.swift */,
+				B5397DF71DBBDE5300FFDD62 /* NetworkProcessing.swift */,
+				B5397DF81DBBDE5300FFDD62 /* Venue.swift */,
+				B5F4FC121DBCAB1D00CCC564 /* Book.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5B156A81DA971E10032B1C4 = {
+			isa = PBXGroup;
+			children = (
+				B5397DEE1DBBDC8700FFDD62 /* Model */,
+				B5B156B31DA971E10032B1C4 /* iOS Laravel Navigator */,
+				B5B156B21DA971E10032B1C4 /* Products */,
+				B5E88DF71DBBF165008BE0CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5B156B21DA971E10032B1C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5B156B11DA971E10032B1C4 /* iOS Laravel Navigator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5B156B31DA971E10032B1C4 /* iOS Laravel Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				B5B156B41DA971E10032B1C4 /* AppDelegate.swift */,
+				B5B156B61DA971E10032B1C4 /* ViewController.swift */,
+				B5397E011DBBDFB700FFDD62 /* VersifyViewController.swift */,
+				B5F4FC181DBD3A3F00CCC564 /* LaravelVersifyViewController.swift */,
+				B5397E051DBBE4E900FFDD62 /* BooksTableViewController.swift */,
+				B5397E071DBBE56100FFDD62 /* VenuesTableViewController.swift */,
+				B5B156B81DA971E10032B1C4 /* Main.storyboard */,
+				B5B156BB1DA971E10032B1C4 /* Assets.xcassets */,
+				B5397E091DBBE69000FFDD62 /* VenueTableViewCell.swift */,
+				B5B156BD1DA971E10032B1C4 /* LaunchScreen.storyboard */,
+				B5B156C01DA971E10032B1C4 /* Info.plist */,
+			);
+			name = "iOS Laravel Navigator";
+			path = "iOS Laravel 2";
+			sourceTree = "<group>";
+		};
+		B5E88DF71DBBF165008BE0CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5E88DF81DBBF165008BE0CA /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5B156B01DA971E10032B1C4 /* iOS Laravel Navigator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5B156D91DA971E10032B1C4 /* Build configuration list for PBXNativeTarget "iOS Laravel Navigator" */;
+			buildPhases = (
+				B5B156AD1DA971E10032B1C4 /* Sources */,
+				B5B156AE1DA971E10032B1C4 /* Frameworks */,
+				B5B156AF1DA971E10032B1C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Laravel Navigator";
+			productName = "iOS Laravel 2";
+			productReference = B5B156B11DA971E10032B1C4 /* iOS Laravel Navigator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5B156A91DA971E10032B1C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Suebtas;
+				TargetAttributes = {
+					B5B156B01DA971E10032B1C4 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 48GHY238YW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B5B156AC1DA971E10032B1C4 /* Build configuration list for PBXProject "iOS Laravel Navigator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5B156A81DA971E10032B1C4;
+			productRefGroup = B5B156B21DA971E10032B1C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5B156B01DA971E10032B1C4 /* iOS Laravel Navigator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5B156AF1DA971E10032B1C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B156BF1DA971E10032B1C4 /* LaunchScreen.storyboard in Resources */,
+				B5B156BC1DA971E10032B1C4 /* Assets.xcassets in Resources */,
+				B5B156BA1DA971E10032B1C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5B156AD1DA971E10032B1C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5F4FC131DBCAB1D00CCC564 /* Book.swift in Sources */,
+				B5F4FC151DBCB62000CCC564 /* LaravelEndpoint.swift in Sources */,
+				B5397DF91DBBDE5300FFDD62 /* APIResult.swift in Sources */,
+				B5397E061DBBE4E900FFDD62 /* BooksTableViewController.swift in Sources */,
+				B5397E021DBBDFB700FFDD62 /* VersifyViewController.swift in Sources */,
+				B5397E0A1DBBE69000FFDD62 /* VenueTableViewCell.swift in Sources */,
+				B5397E001DBBDE5300FFDD62 /* Venue.swift in Sources */,
+				B5F4FC191DBD3A3F00CCC564 /* LaravelVersifyViewController.swift in Sources */,
+				B5397DFC1DBBDE5300FFDD62 /* FoursquareEndpoint.swift in Sources */,
+				B5B156B71DA971E10032B1C4 /* ViewController.swift in Sources */,
+				B5397DFB1DBBDE5300FFDD62 /* FoursquareClient.swift in Sources */,
+				B5397E081DBBE56100FFDD62 /* VenuesTableViewController.swift in Sources */,
+				B5397DFE1DBBDE5300FFDD62 /* LocationManager.swift in Sources */,
+				B5B156B51DA971E10032B1C4 /* AppDelegate.swift in Sources */,
+				B5397DFA1DBBDE5300FFDD62 /* Coordinate.swift in Sources */,
+				B5F4FC171DBCC92A00CCC564 /* LaravelClient.swift in Sources */,
+				B5397DFD1DBBDE5300FFDD62 /* Location.swift in Sources */,
+				B5397DFF1DBBDE5300FFDD62 /* NetworkProcessing.swift in Sources */,
+				B5397E041DBBE35500FFDD62 /* LocalStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5B156B81DA971E10032B1C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B156B91DA971E10032B1C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5B156BD1DA971E10032B1C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B156BE1DA971E10032B1C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5B156D71DA971E10032B1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5B156D81DA971E10032B1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5B156DA1DA971E10032B1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48GHY238YW;
+				INFOPLIST_FILE = "iOS Laravel 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.ac.mut.it.iOS-Laravel-Navigator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B5B156DB1DA971E10032B1C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48GHY238YW;
+				INFOPLIST_FILE = "iOS Laravel 2/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th.ac.mut.it.iOS-Laravel-Navigator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5B156AC1DA971E10032B1C4 /* Build configuration list for PBXProject "iOS Laravel Navigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B156D71DA971E10032B1C4 /* Debug */,
+				B5B156D81DA971E10032B1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5B156D91DA971E10032B1C4 /* Build configuration list for PBXNativeTarget "iOS Laravel Navigator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B156DA1DA971E10032B1C4 /* Debug */,
+				B5B156DB1DA971E10032B1C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5B156A91DA971E10032B1C4 /* Project object */;
+}
