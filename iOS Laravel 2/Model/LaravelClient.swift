@@ -12,7 +12,7 @@ class LaravelClient
 {
     let clientID: String
     let clientSecret: String
-    
+
     init(clientID: String, clientSecret: String)
     {
         self.clientSecret = clientSecret
@@ -21,7 +21,9 @@ class LaravelClient
     
     func fetchBookFor(query: String? = nil, limit: Int? = nil, completion: @escaping (APIResult<[Book]>) -> Void)
     {
-        let searchEndpoint = LaravelEndpoint.search(query: query, limit: limit)
+        let tokent = LocalStore.getToken()! as String
+        print("token:",tokent);
+        let searchEndpoint = LaravelEndpoint.searchBook(query: query, limit: limit, token: tokent)
         let networkProcessing = NetworkProcessing(request: searchEndpoint.request)
         
         networkProcessing.downloadJSON { (json, httpResponse, error) in
@@ -37,7 +39,6 @@ class LaravelClient
                     
                     return
                 }
-                
                 guard let bookDictionaries = json["books"] as? [[String : Any]] else {
                         let error = NSError(domain: DANetworkingErrorDomain, code: UnexpectedResponseError, userInfo: nil)
                         completion(.failure(error))
@@ -71,10 +72,28 @@ class LaravelClient
     }
     
     func makeAuth(_ username: String, _ password: String, completion: @escaping (APIResult<String>) -> Void){
+        
+        let searchEndpoint = LaravelEndpoint.makeAuth(username: username, password: password)
+        let networkProcessing = NetworkProcessing(request: searchEndpoint.request)
+        
+        
+        
+        networkProcessing.downloadJSON { (json, httpResponse, error) in
+            if let dictionary = json {
+                if let tokenValue = dictionary["token"] as? String {
+                    print("token:",tokenValue)
+                    LocalStore.saveToken(tokenValue)
+                    completion(.success(tokenValue))
+                }
+            }
+        }
+    }
+    /*
+    func makeAuth(_ username: String, _ password: String, completion: @escaping (APIResult<String>) -> Void){
         let username = username
         let password = password
-        
-        let baseURL = "http://172.17.1.224:8000/"
+     
+        let baseURL = "http://192.168.1.5:8000/"
         let path = "api/auth/login"
         let urlString = "\(baseURL)\(path)"
         let postString = "password=\(password)&email=\(username)"
@@ -93,10 +112,9 @@ class LaravelClient
                     LocalStore.saveToken(tokenValue)
                     
                     completion(.success(tokenValue))
-                    //self.performSelector(onMainThread: #selector(ViewController.updateTokenLabel(_:)),with: tokenValue, waitUntilDone: false)
                 }
             }
         }
-    }
+    }*/
 }
 

@@ -24,7 +24,9 @@ class VersifyViewController: UIViewController {
         let username = textFieldUsername.text!
         let password = textFieldPassword.text!
         
-        let baseURL = "http://172.17.1.224:8000/" //เช่น http://172.17.1.224:8000/
+        //textFieldUsername.resignFirstResponder()
+        //textFieldPassword.resignFirstResponder()
+        let baseURL = "http://172.17.1.123:8000/" //เช่น http://172.17.1.224:8000/
         let path = "api/auth/login"
         let urlString = "\(baseURL)\(path)"
         let postString = "password=\(password)&email=\(username)"
@@ -40,9 +42,9 @@ class VersifyViewController: UIViewController {
         networkProcessing.downloadJSON { (json, httpResponse, error) in
             if let dictionary = json {
                 if let tokenValue = dictionary["token"] as? String {
-                    LocalStore.saveToken(tokenValue)
-                    self.performSelector(onMainThread: #selector(VersifyViewController.updateTokenLabel(_:)),
-                                         with: tokenValue, waitUntilDone: false)
+                    
+                    //self.updateTokenLabel(tokenValue)
+                    self.performSelector(onMainThread: #selector(VersifyViewController.updateTokenLabel(_:)), with: tokenValue, waitUntilDone: false)
                 }
             }
         }

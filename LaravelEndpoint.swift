@@ -13,20 +13,27 @@ import Foundation
 enum LaravelEndpoint
 {
     case search(query: String?, limit: Int?)
+    case searchBook(query: String?, limit: Int?, token: String?)
+    case makeAuth(username: String,  password: String)
     
     var baseURL: String {
-        return "http://172.17.1.224:8000"
+        return "http://172.17.1.123:8000"
     }
     
     var path: String {
         switch self {
         case .search: return "/api/all-book"
+        case .makeAuth: return "/api/auth/login"
+        case .searchBook: return "/api/books"
         }
     }
     
     private struct ParameterKeys {
         static let query = "query"
         static let limit = "limit"
+        static let username = "email"
+        static let password = "password"
+        static let token = "token"
     }
     
     private struct DefaultValues {
@@ -36,6 +43,18 @@ enum LaravelEndpoint
     // ["client_id" : "adfa8sdyf80a", "coordinate" : "57.4,85"]
     var parameters: [String : Any] {
         switch self {
+        case .searchBook(let query, let limit, let token):
+            
+            var parameters : [String : Any] = [
+                ParameterKeys.token : token! as String
+            ]
+            
+            if let query = query {
+                parameters[ParameterKeys.query] = query
+            }
+            
+            return parameters
+
         case .search(let query, let limit):
             var parameters : [String : Any] = [
                 ParameterKeys.limit : limit
@@ -45,6 +64,12 @@ enum LaravelEndpoint
                 parameters[ParameterKeys.query] = query
             }
             
+            return parameters
+        case .makeAuth(let username,let password):
+            let parameters : [String: Any] = [
+                ParameterKeys.username : username,
+                ParameterKeys.password : password
+            ]            
             return parameters
         }
     }
@@ -61,12 +86,33 @@ enum LaravelEndpoint
     }
     
     var request: URLRequest {
-        var components = URLComponents(string: baseURL)!
-        components.path = path
-        components.queryItems = queryComponents
-        
-        let url = components.url!
-        return URLRequest(url: url)
+        switch self {
+        case .searchBook:
+            var components = URLComponents(string: baseURL)!
+            components.path = path
+            components.queryItems = queryComponents
+            let url = components.url!
+            let request = URLRequest(url: url)
+            return request
+        case .search:
+            var components = URLComponents(string: baseURL)!
+            components.path = path
+            components.queryItems = queryComponents
+            let url = components.url!
+            let request = URLRequest(url: url)
+            return request
+        case .makeAuth:
+            var components = URLComponents(string: baseURL)!
+            components.path = path
+            components.queryItems = queryComponents
+            
+            let urlString = "\(baseURL)\(path)"
+            let url = URL(string: urlString)!
+            var request = URLRequest(url: url)
+            request.httpMethod = "Post"
+            request.httpBody = components.query?.data(using: .utf8)
+            return request
+        }
     }
 }
 

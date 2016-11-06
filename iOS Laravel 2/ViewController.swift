@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         // Send HTTP GET Request
         
         // Define server side script URL
-        let myUrl = URL(string:"http://172.17.1.224:8000/api/auth/login")
+        let myUrl = URL(string:"http://203.209.48.20:8000/api/auth/login")
         var request = URLRequest(url:myUrl!)
         request.httpMethod = "POST"// Compose a query string
         
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
     func updateTokenLabel(_ text: String) {
         
         self.tokenLabel.text = "Your Token is " + text
-        self.performSegue(withIdentifier: "show", sender: self);
+        //self.performSegue(withIdentifier: "show", sender: self);
         
     }
     override func didReceiveMemoryWarning() {

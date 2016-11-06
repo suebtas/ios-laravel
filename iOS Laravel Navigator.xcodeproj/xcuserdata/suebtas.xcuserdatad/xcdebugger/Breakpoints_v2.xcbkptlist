@@ -234,7 +234,7 @@
                   moduleName = "iOS Laravel Navigator"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/suebtas/Documents/Projects/iOS/ITEC0721/laravel-ios/iOS%20Laravel%20navigator/iOS%20Laravel%202/Model/FoursquareClient.swift"
-                  timestampString = "499270656.566531"
+                  timestampString = "500112775.392242"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -249,7 +249,7 @@
                   moduleName = "iOS Laravel Navigator"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/suebtas/Documents/Projects/iOS/ITEC0721/laravel-ios/iOS%20Laravel%20navigator/iOS%20Laravel%202/Model/FoursquareClient.swift"
-                  timestampString = "499270656.568142"
+                  timestampString = "500112775.393456"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "41"
@@ -266,12 +266,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS Laravel 2/LaravelVersifyViewController.swift"
-            timestampString = "499270169.860562"
+            timestampString = "500065297.516515"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "VerifyMethod(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS Laravel 2/Model/LaravelClient.swift"
+            timestampString = "500068531.053417"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "makeAuth(_:_:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalStore.swift"
+            timestampString = "500064054.932407"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "saveToken(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -281,13 +313,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS Laravel 2/LaravelVersifyViewController.swift"
-            timestampString = "499270976.108958"
+            filePath = "iOS Laravel 2/Model/LaravelClient.swift"
+            timestampString = "500067353.498371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "VerifyMethod(_:)"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchBookFor(query:limit:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -297,46 +329,62 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOS Laravel 2/LaravelVersifyViewController.swift"
-            timestampString = "499270655.709204"
+            filePath = "iOS Laravel 2/BooksTableViewController.swift"
+            timestampString = "500067884.328191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "BooksTableViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS Laravel 2/BooksTableViewController.swift"
+            timestampString = "500068346.792335"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchBooks()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS Laravel 2/BooksTableViewController.swift"
+            timestampString = "500068521.531732"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "updateData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS Laravel 2/VersifyViewController.swift"
+            timestampString = "500112778.390458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "VerifyMethod(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOS_Laravel_Navigator.LaravelVersifyViewController.VerifyMethod (Swift.AnyObject) -&gt; ()"
-                  moduleName = "iOS Laravel Navigator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/suebtas/Documents/Projects/iOS/ITEC0721/laravel-ios/iOS%20Laravel%20navigator/iOS%20Laravel%202/LaravelVersifyViewController.swift"
-                  timestampString = "499270656.023782"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "1254">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "iOS_Laravel_Navigator.LaravelVersifyViewController.(VerifyMethod (Swift.AnyObject) -&gt; ()).(closure #1)"
-                  moduleName = "iOS Laravel Navigator"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/suebtas/Documents/Projects/iOS/ITEC0721/laravel-ios/iOS%20Laravel%20navigator/iOS%20Laravel%202/LaravelVersifyViewController.swift"
-                  timestampString = "499270656.025346"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "50">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -41,6 +41,8 @@ class BooksTableViewController: UITableViewController {
         laravelClient.fetchBookFor(completion: { (result) in
             switch result {
             case .success(let books):
+                
+                //self.performSelector(onMainThread: #selector(BooksTableViewController.updateData(_:)), with: books as [Book], waitUntilDone: false)
                 self.books = books
                 self.refreshControl?.endRefreshing()
             case .failure(let error):
@@ -48,6 +50,12 @@ class BooksTableViewController: UITableViewController {
                 print(error)
             }
         })
+        
+    }
+    
+    func updateData(_ books: Any ) {
+        self.books = books as! [Book]
+        self.refreshControl?.endRefreshing()
         
     }
     override func didReceiveMemoryWarning() {

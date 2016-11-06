@@ -31,16 +31,15 @@ class LaravelVersifyViewController: UIViewController {
         laravelClient.makeAuth(username, password, completion: { (result) in
             switch result {
             case .success(let tokenValue):
-                LocalStore.saveToken(tokenValue)
                 self.tokenValue = tokenValue
-                
+
                 self.performSelector(onMainThread: #selector(LaravelVersifyViewController.updateTokenLabel(_:)),
                                      with: tokenValue, waitUntilDone: false)
                 //self.updateTokenLabel(tokenValue)
                 //self.refreshControl?.endRefreshing()
             case .failure(let error):
                 // CHALLENGE: display an alert view to show error. error.localizedDescription
-                print(error)
+                print(error.localizedDescription)
             }
         })
         
